@@ -2,13 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-  }
-  body[desc="Clear"]{
-    background-image: url('images/clouds.jpeg');
+    font-family: "Roboto Mono", monospace;
+}
+#background[data-bg="clouds"] {
+    background-image: url("./images/clouds.jpeg");
     background-color: gray;
-  }
-  .container {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+#background[data-bg="clear"] {
+    background-image: url("./images/clear.webp");
+    background-color: gray;
+}
+#background[data-bg="drizzle"] {
+    background-image: url("./images/drizzle.jpeg");
+    background-color: gray;
+}
+#background[data-bg="mist"] {
+    background-image: url("./images/mist.jpeg");
+    background-color: gray;
+}
+#background[data-bg="rain"] {
+    background-image: url("./images/rain.webp");
+    background-color: gray;
+}
+#background[data-bg="snow"] {
+    background-image: url("./images/snow.jpeg");
+    background-color: gray;
+}
+#background[data-bg="thunderstorm"] {
+    background-image: url("./images/thunderstorm.jpeg");
+    background-color: gray;
+}
+
+.container {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -22,34 +51,34 @@
       rgba(224, 196, 91, 0.8407738095238095) 35%,
       rgba(230, 224, 113, 1) 100%
     ); */
-  }
-  
-  .weather {
+}
+
+.weather {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 15px 0;
     font-size: 1.5rem;
-  }
-  
-  #location {
+}
+
+#location {
     font-size: 3rem;
     font-weight: 800;
-  }
-  .desc {
+}
+.desc {
     font-size: 1.25rem;
     text-transform: capitalize;
-  }
-  
-  .circle {
+}
+
+.circle {
     background-color: black;
     border-radius: 50px;
     height: 15px;
     width: 15px;
     margin: 0 15px;
-  }
-  .card{
+}
+.card {
     background-color: rgba(255, 255, 255, 0.34);
     padding: 20px;
     border-radius: 2rem;
-  }
+}
